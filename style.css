@@ -26,7 +26,7 @@
   background-size: 100vw 75vh;
   background-repeat: no-repeat;
   z-index: 0;
-  animation: kenburns-top 5s ease-out both;
+  animation: kenburns-top 5s ease-out infinite both;
 }
 
 @keyframes kenburns-top {
@@ -46,7 +46,7 @@
   top: 500px;
   left: 600px;
   z-index: 1;
-  animation: flip-scale-down-ver 2s linear reverse both;
+  animation: flip-scale-down-ver 4s infinite linear reverse both;
   margin-top: -200px;
 }
 
@@ -83,22 +83,10 @@
   border: 1px solid #ffff;
   width: 150px;
   height: 50px;
-  animation: slide-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 #texto {
   z-index: 1;
-}
-
-
-@keyframes slide-fwd-center {
-  0% {
-    transform: translateZ(0);
-  }
-
-  100% {
-    transform: translateZ(160px);
-  }
 }
 
 h2 {
@@ -117,7 +105,7 @@ p {
   font-weight: normal;
   font-size: small;
   padding-top: 30px;
-  animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate;
+  animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 @keyframes focus-in-expand {
@@ -158,7 +146,6 @@ h3 {
   background-image: url(https://i.pinimg.com/564x/c5/c2/b8/c5c2b837c3f39618a9c26c927fa95260.jpg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: text-pop-up-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 a {
